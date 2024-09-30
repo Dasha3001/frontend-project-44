@@ -2,6 +2,6 @@
 
 import hello from '../src/cli.js';
 
-console.log('Welcome to the Brain Games!');
+const name = hello();
 
-hello();
+export {name};
