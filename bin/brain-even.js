@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import readlineSync from 'readline-sync';
+import {enterAnswer, compare} from '../src/index.js';
 import {name} from './brain-games.js';
 
 
@@ -10,17 +10,21 @@ const brainEven = () => {
     let correctAnswers = 1
     while (correctAnswers <= 3) {
         let number = Math.round(Math.random() * 100)
-        console.log('Question: ' + number)
-        const answer = readlineSync.question('Your answer: ');
+        const answer =  enterAnswer(number);
 
-        if ((number % 2 === 0 && answer === 'yes') || (number % 2 !== 0 && answer === 'no')) {
-            correctAnswers += 1; 
-            console.log('Correct!');
-        }
-        else {
-            correctAnswers = 1;
-            console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was 'yes'. Let's try again, " + name + "!");
-            }
+
+        let correctAnswer;
+        switch (number % 2) {
+        case 0:
+            correctAnswer = 'yes';
+            break;
+        case 1:
+            correctAnswer = 'no';
+            break;
+        };
+
+        correctAnswers = compare(correctAnswer, answer, correctAnswers, name);
+
         }
 
         console.log('Congratulations, ' + name + '!')

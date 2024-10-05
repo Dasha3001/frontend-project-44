@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import readlineSync from 'readline-sync';
+// import readlineSync from 'readline-sync';
+import {enterAnswer, compare} from '../src/index.js';
 import {name} from './brain-games.js';
-
 
 
 const brainEven = () => {
@@ -11,32 +11,24 @@ const brainEven = () => {
     while (correctAnswers <= 3) {
         let number1 = Math.round(Math.random() * 100)
         let number2 = Math.round(Math.random() * 100)
-        let actions = ['+', '-', '*']
+        const actions = ['+', '-', '*']
         let actionsChosen = actions[Math.floor(Math.random() * 3)]
-        console.log('Question: ' + number1 + actionsChosen + number2)
-        const answer = readlineSync.question('Your answer: ');
+        let answer = enterAnswer(number1 + actionsChosen + number2)
 
         let correctAnswer;
         switch (actionsChosen) {
         case '+':
-            correctAnswer = number1 + number2;
+            correctAnswer = (number1 + number2).toString();
             break;
         case '-':
-            correctAnswer = number1 - number2;
+            correctAnswer = (number1 - number2).toString();
             break;
         case '*':
-            correctAnswer = number1 * number2;
+            correctAnswer = (number1 * number2).toString();
             break;
         }
 
-        if (correctAnswer === Number(answer)) {
-        correctAnswers += 1;
-        console.log('Correct!');
-        } 
-        else {
-        correctAnswers = 1;
-        console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + correctAnswer + ". Let's try again, " + name + "!");
-        }
+        correctAnswers = compare(correctAnswer, answer, correctAnswers, name);
     }
 
   console.log('Congratulations, ' + name + '!');
