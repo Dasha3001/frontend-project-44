@@ -5,7 +5,7 @@ import {name} from './brain-games.js';
 
 
 
-const game = () => {
+const brainEven = () => {
     console.log('Answer "yes" if the number is even, otherwise answer "no".')
     let correctAnswers = 1
     while (correctAnswers <= 3) {
@@ -27,4 +27,4 @@ const game = () => {
     }
 
 
-    game();
+    brainEven();
