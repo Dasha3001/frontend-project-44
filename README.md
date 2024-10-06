@@ -6,3 +6,13 @@
 View the asciinema recording of brain-even game at:
 
 https://asciinema.org/a/nZciLVLI1VHwgkXf0lrI1iE9J 
+
+
+View the asciinema recording of brain-calc game at:
+
+https://asciinema.org/a/W0GaYYkEenAui7jTdKovSiQxz
+
+
+View the asciinema recording of brain-gcd game at:
+
+https://asciinema.org/a/rxigPeg7XhwpbRa0zEn6zxXgV
