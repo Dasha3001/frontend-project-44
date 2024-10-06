@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-// import readlineSync from 'readline-sync';
 import {enterAnswer, compare} from '../src/index.js';
 import {name} from './brain-games.js';
 

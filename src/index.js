@@ -19,4 +19,24 @@ const compare = (correctAnswer, answer, correctAnswers, name) => {
     return correctAnswers;
 }
 
-export {compare, enterAnswer};
+const gcd = (number1, number2) => {
+    if(number1>=number2) {
+        let correctAnswer = number2
+        while(correctAnswer>0) {
+            if (number1%correctAnswer === 0 && number2%correctAnswer === 0) {
+                return correctAnswer.toString();
+            }
+        correctAnswer -= 1; 
+        }
+    }
+    else {
+        let correctAnswer = number1
+        while(correctAnswer>0) {
+            if (number1 % correctAnswer === 0 && number2 % correctAnswer === 0) {
+                return correctAnswer.toString();
+            }
+        correctAnswer -= 1; 
+        }
+        }
+}
+export {compare, enterAnswer, gcd};
