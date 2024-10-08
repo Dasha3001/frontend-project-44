@@ -21,3 +21,9 @@ https://asciinema.org/a/rxigPeg7XhwpbRa0zEn6zxXgV
 View the asciinema recording of brain-progression game at:
 
 https://asciinema.org/a/FEIUvDX4EPbcLF4wBw3FdXMH6
+
+
+
+View the asciinema recording of brain-prime game at:
+
+https://asciinema.org/a/bDPLDsysR3zFRJuAxjcX22ATP
