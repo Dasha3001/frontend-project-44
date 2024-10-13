@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 import {
-  enterAnswer, compare, gcd, breakCondition
+  enterAnswer, compare, gcd, breakCondition,
 } from '../src/index.js';
-import name from './brain-games.js'
+import name from './brain-games.js';
 
 const brainGcd = () => {
   console.log('Find the greatest common divisor of given numbers.');
