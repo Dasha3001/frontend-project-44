@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import {enterAnswer, compare} from '../src/index.js';
+import {enterAnswer, compare, breakCondition} from '../src/index.js';
 import {name} from './brain-games.js';
 
 
@@ -25,10 +25,12 @@ const brainEven = () => {
 
         correctAnswers = compare(correctAnswer, answer, correctAnswers, name);
 
-        }
+        if (breakCondition(correctAnswers, name)) {
+            break;
+        };
 
-        console.log('Congratulations, ' + name + '!')
-    }
+    };
+}
 
 
     brainEven();

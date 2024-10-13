@@ -8,7 +8,7 @@
 brain-calc: игра на вычисление значения выражения с действиями '+', '-', '*' (запуск командой "brain-calc")
 View the asciinema recording of brain-calc game at:
 
-https://asciinema.org/a/W0GaYYkEenAui7jTdKovSiQxz
+https://asciinema.org/a/eTY57zv2q6czQj2qyDXxxM58G
 
 
 
@@ -38,6 +38,10 @@ View the asciinema recording of brain-progression game at:
 
 https://asciinema.org/a/FEIUvDX4EPbcLF4wBw3FdXMH6
 
+
+
+Maintainability Badge:
+<a href="https://codeclimate.com/github/Dasha3001/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/9914f5f4dbd29e4b25e9/maintainability" /></a>
 
 
 

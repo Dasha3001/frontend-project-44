@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import {enterAnswer, compare, gcd} from '../src/index.js';
+import {enterAnswer, compare, gcd, breakCondition} from '../src/index.js';
 import {name} from './brain-games.js';
 
 
@@ -14,9 +14,12 @@ const brainGcd = () => {
 
         let correctAnswer = gcd(number1, number2);
         correctAnswers = compare(correctAnswer, answer, correctAnswers, name);
+
+        if (breakCondition(correctAnswers, name)) {
+            break;
         };
 
-    console.log('Congratulations, ' + name + '!');
+    };
 };
 
 brainGcd();

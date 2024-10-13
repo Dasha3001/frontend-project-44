@@ -13,8 +13,9 @@ const compare = (correctAnswer, answer, correctAnswers, name) => {
         console.log('Correct!');
     }
     else {
-        correctAnswers = 1;
-        console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + correctAnswer + ". Let's try again, " + name + "!");
+        correctAnswers = 0;
+        console.log("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + correctAnswer + ".")
+        console.log("Let's try again, " + name + "!");
     }
     return correctAnswers;
 }
@@ -39,4 +40,17 @@ const gcd = (number1, number2) => {
         }
         }
 }
-export {compare, enterAnswer, gcd};
+
+
+const breakCondition = (correctAnswers, name) => {
+    if (correctAnswers === 0) {
+      return true; // завершить цикл
+    } else if (correctAnswers > 3) {
+      console.log('Congratulations, ' + name + '!');
+      return true; // завершить цикл
+    }
+    return false; // продолжить цикл
+  }
+  
+
+export {compare, enterAnswer, gcd, breakCondition};
