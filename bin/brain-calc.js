@@ -12,7 +12,7 @@ const brainEven = () => {
         let number2 = Math.round(Math.random() * 100)
         const actions = ['+', '-', '*']
         let actionsChosen = actions[Math.floor(Math.random() * 3)]
-        let answer = enterAnswer(number1 + actionsChosen + number2)
+        let answer = enterAnswer(number1 + ' ' + actionsChosen + ' ' + number2)
 
         let correctAnswer;
         switch (actionsChosen) {
