@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { enterAnswer, compare, breakCondition } from '../src/index.js';
-import { name } from './brain-games.js';
+import name from './brain-games.js';
 
 const brainEven = () => {
   console.log('What is the result of the expression?');

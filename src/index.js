@@ -6,7 +6,8 @@ const enterAnswer = (questionValue) => {
   return answer;
 };
 
-const compare = (correctAnswer, answer, currentCorrectAnswers, name) => {
+const compare = (correctAnswer, answer, correctAnswers, name) => {
+  let currentCorrectAnswers = correctAnswers;
   if (correctAnswer === answer) {
     currentCorrectAnswers += 1;
     console.log('Correct!');

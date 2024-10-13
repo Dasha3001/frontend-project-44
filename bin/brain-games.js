@@ -4,4 +4,4 @@ import hello from '../src/cli.js';
 
 const name = hello();
 
-export { name };
+export default name;

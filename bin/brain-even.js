@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { enterAnswer, compare, breakCondition } from '../src/index.js';
-import { name } from './brain-games.js';
+import name from './brain-games.js';
 
 const brainEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
