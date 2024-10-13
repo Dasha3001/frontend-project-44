@@ -41,4 +41,6 @@ const breakCondition = (correctAnswers, name) => {
   return false; // продолжить цикл
 };
 
-export { compare, enterAnswer, gcd, breakCondition };
+export { 
+    compare, enterAnswer, gcd, breakCondition 
+};

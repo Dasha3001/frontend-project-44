@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-import { enterAnswer, compare, gcd, breakCondition } from '../src/index.js';
+import { 
+    enterAnswer, compare, gcd, breakCondition 
+} from '../src/index.js';
 import name from './brain-games.js';
 
 const brainGcd = () => {
